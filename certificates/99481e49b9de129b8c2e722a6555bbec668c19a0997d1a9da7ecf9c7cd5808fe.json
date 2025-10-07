@@ -1,0 +1,13 @@
+{
+    "studentId": "46",
+    "certificateData": {
+        "name": "Ram",
+        "course": "BM",
+        "grade": "9.6",
+        "issueDate": 1744869873,
+        "institution": "KLE"
+    },
+    "certificateHash": "99481e49b9de129b8c2e722a6555bbec668c19a0997d1a9da7ecf9c7cd5808fe",
+    "signature": "4ffd9fe8c88d87e78dc3995a051fa58741cc3cbd58e4954d5bf7aa93f3229b577a7ebe55e00aab96fda3106a3def4b0ed071ac875b0bf47d625f8c5de715f0bf0a404fdd8a530f800cbfa50dbd7dbd8ff7c9e384abab3bd0a5fe9ba979fc80970b3336f69b220652e8d9561001754c8c959f82d35915635a5ae80fa4bddcad35bbc465cdb1cc3f9119d87ee820b113d912801c8af96a5849433d2d31ded74dcff5f2961e4acdab3ce0e66df117d2c3a6e0ca5f6542d6693c12f010e4f922f0ed6f8e251e771ea0fa8e035d9feb1569bef09bb9056db667a06243c834d0fe66390fd0ac7640d49155a56e3897b0985f5492d03768379195c9bdfcc564b948190b",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8cF/33MhTT2rOVLlM2dF\nyM4AoBcUclPdOdKSkMA1ckeX8221SPGVAG1LtrsyKnmJGCVqvCzJ6EC0jGKq0a4i\nEp0ckpDFasEePsX5DgGF8N/hMXHyHrZmB7zt0iytfdIZqFuGA8uz5C8+20mp0hqg\nJxmz9Usn+bbUclu3ZZz/xLlb5QwUfegGbraOaAe2QAmjnlfCO96xbfE69JPneBp9\nO2Uyyo4FElpuPTzCXwpdFOkLwJkPmj/uQlAPCzR72jFNwnnnnauSSH8SYOkjm4Kr\nItGat90puL8kev+aSPigMtULcEZhfkRrOnfj5FAZVqKzr+1Z3jzencCXOhJRAlOo\nAwIDAQAB\n-----END PUBLIC KEY-----\n"
+}

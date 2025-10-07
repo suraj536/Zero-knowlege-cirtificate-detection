@@ -1,0 +1,13 @@
+{
+    "studentId": "6",
+    "certificateData": {
+        "name": "Mayur",
+        "course": "Bachelor of Engg/Tech",
+        "grade": "A",
+        "issueDate": 1744776858,
+        "institution": "KLE"
+    },
+    "certificateHash": "eb0203b95669ab58b8bfa353412f7351df421d5caf41cf4866dafc1556f50bf9",
+    "signature": "4e12d74431f6f474d395e0abcbd7fb1b2dc11efbda462d6a3887514d10b142fcfde43248a05f35ff9abb11d65dd3f7896affd414a4b6425827923059fc6e595c5b78f997e9cd6184a4aefb69a8dd97160a1fd123dc5a38c34236ed3ef74d553ded1ce8719fd59d02f81569dda001800ade2ee95696e9a93c3b7ff1f08c21b43ec4f2c8d2cc698ce75e5e0da28fa360faa48f3c0eb61dfc2c7f7baabe04a64bc9da75d11e64d704db5be9ed358901df380e1bdf6f92afde00718698b4dbf8f06b83bc6770706c3f7438b37c166475bc70242aae370d14a8636d6dbdfd777a6eb65d67551d2fe0b6e8dcea86e5c373514eabe74e54221733dd584eff2d4cc00e18",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzIBngn4v/Pta3oF5n0Ew\nlsblLJhxFLMlHjWT0zcZvg7P4xfSdFhvooQ4jJQX2BV7ibX9CgGGZS67sJag8jZI\n/g2T1htzvlM0P60G6b9crW9Wbp/c24QLGqnzz489Umy5AFq5K7N6duACcrUwEYLd\nb7MMtyaDK+VnLXSbfI/t5p0n/ohUxAl0SKToeUJh4TdO3P/CiwavooubBvUQpuMm\nZ9wM1eRz4mesdVjfpKxuZdEe0TQIPkbBJ39l0uznKWUD9N15DKEh8YYHYGT/hBeX\n5+nez667Hv20i6cWz5RI3oEAkt7LWsNE9Ai88TSHzAJv0E0rqPqwZ+6EsTluDjx0\newIDAQAB\n-----END PUBLIC KEY-----\n"
+}

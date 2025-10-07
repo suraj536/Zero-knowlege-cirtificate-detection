@@ -1,0 +1,13 @@
+{
+    "studentId": "02",
+    "certificateData": {
+        "name": "Maheboob Shaik",
+        "course": "CSE",
+        "grade": "E",
+        "issueDate": 1744788546,
+        "institution": "KLE"
+    },
+    "certificateHash": "a032a487c7a6ecfb18796d9f0ce33c2d6c458bbda4fcd4c62d21b038af1135e2",
+    "signature": "36e28d838280530c518c94bd41904403f2e474733655dea0c5795ec39b9c9158337131a98aaca4d4953030489d07c8a46da740cc1cd108ca124fd8364d1df06a8fb3703b1c569553be7cba1d6cefeeddf8a9e71c6ee6feef0e51d138cb5ff08ee6059289bc375c64c169fbfe63439b44c44ee8661754d9b44e95387f628f93b27d00b9b47cfa24cb4121d4e541c51d8f9ef75543fb7f02ded2af801897677c432d16ced163cba3f64c05e956a3acf769363a90c806aba7b4c48f1fbdb8ebae06d661b7bfe7d16e51e9d9ac28563917aa4d344520015496aa2e9c56883095b8c46d5c2cf88972c32fa80ea49060efebf3e001d9f14e8e8ef52ba48673067aaad3",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkfn7TA/LpzFvAL66rLij\neTKDBHi1rSXCYoIG8tVhYXCRG0Xl0pwa/Ga2YFUsAVd3nF+QllXv4TfnGlnW8Ix6\nYFNsMT5ggESkmr9togYaOkfSShyEe2Rm+meCBQ3ixHJSkdokU7fgutu3iuePN9Eh\nWFipwwx2NDxx4Z8vZ2UdfOe++KvnUTRE1BRwSYVDAeOCeLT/cbknoonNjTmXnZGC\n1Qmotx36l1FkecscYJkEAbnyguorANWOHnvhfvNbqrvH9iO2OSXrdfCVxh7pOb1h\nmCG3/fZyQw0Jw43g9RCMxBS4zna3gSUrL5BrXlx+R82jLuI/2CcNVLuE+XJhQM6f\nowIDAQAB\n-----END PUBLIC KEY-----\n"
+}

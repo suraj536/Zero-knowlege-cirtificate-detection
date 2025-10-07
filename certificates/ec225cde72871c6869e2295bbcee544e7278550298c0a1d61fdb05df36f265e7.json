@@ -1,0 +1,13 @@
+{
+    "studentId": "03",
+    "certificateData": {
+        "name": "Gilmaan",
+        "course": "CSE",
+        "grade": "c",
+        "issueDate": 1744789005,
+        "institution": "KLE"
+    },
+    "certificateHash": "ec225cde72871c6869e2295bbcee544e7278550298c0a1d61fdb05df36f265e7",
+    "signature": "392171f3c336386544268e94b9ffcb0a3f238e7beb26a0de38cc36640f55e96877ff543d8aa46b06e6dbfbb489b4fd568ca18c4200b6492570d059091647a89db5bd14ba5a4241ffc2d5b793c334645b41e10fb9095b3eafcc7430b9f1183c15c61e77889b4e97331e03c9cd5756d538754d0ce0601491c597aa1f5a6589f8419f60ba861a89433f360dadc84b7525939f6d7b75d6892b570ecde51b7ddedac21fe8f55dec193e734afdf8664a48234fb7cb2d602014db43c34acab4b18677fea546d84c2828b2bb65c0f781036b09ee57dd886e74e55328b28bbc676b184571c6d3f61c22701026ebfc012542161067e14692e7ebb3e9cd69a632291c5b0096",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkfn7TA/LpzFvAL66rLij\neTKDBHi1rSXCYoIG8tVhYXCRG0Xl0pwa/Ga2YFUsAVd3nF+QllXv4TfnGlnW8Ix6\nYFNsMT5ggESkmr9togYaOkfSShyEe2Rm+meCBQ3ixHJSkdokU7fgutu3iuePN9Eh\nWFipwwx2NDxx4Z8vZ2UdfOe++KvnUTRE1BRwSYVDAeOCeLT/cbknoonNjTmXnZGC\n1Qmotx36l1FkecscYJkEAbnyguorANWOHnvhfvNbqrvH9iO2OSXrdfCVxh7pOb1h\nmCG3/fZyQw0Jw43g9RCMxBS4zna3gSUrL5BrXlx+R82jLuI/2CcNVLuE+XJhQM6f\nowIDAQAB\n-----END PUBLIC KEY-----\n"
+}

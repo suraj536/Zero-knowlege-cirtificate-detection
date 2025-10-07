@@ -1,0 +1,13 @@
+{
+    "studentId": "04",
+    "certificateData": {
+        "name": "Mayur",
+        "course": "CSE",
+        "grade": "c",
+        "issueDate": 1744736979,
+        "institution": "KLE"
+    },
+    "certificateHash": "017282b70c60a61fae6da2af32168e9f0336f8420b0102dd2f5bb004aef31c23",
+    "signature": "9219d52c02ebdfbca664b16c3de4bdcb9d6ed930b2cabdcc5ea4fc02d33073d38155602575c80bae4bb866fb322eaaae94f938d636119ae3f1de2f9202fd4916cc574699da4988c4ddc09b3d942620662fc3c88475a0a3d4c54a7e41a0f9d21617e6894ab6dd54fcaa2b7f59e29a3100d520ccc5bc6f5d50ce4e2c7fce8322223c68729cc1ba23ad5aeec42e38b34d9982fbf956757b6dcfcde9dc1a23f31c252f8de061cc1859aba5d04440e82ac782fd7b6d3dc053da465204b3a39ae879243cc0cb4c250e681ec4dc150af3c4f334013ee0b3f9db30f2892ba948f8b62d77fb48d176652f25d4027abdd98744d238b79b8ce60e45f9a88acd8bd5c63a6140",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2ieUWmIXSFh7ABHGd7iR\naRA9D2G0Lvc/xjCeqMxHE26v4i/FIzGkdHOtpK3yjoW+LmdgqQXR0fLVh76VCElb\nrqZlZQCcHpUJP6smDsbJQGt4Uv25mrHBPkc3DDpn6ZR1LQoSfZWyW+keelhYXEjn\nJ/LuYQ0bW8mH3MeTsXBS7fQgnkIa7+CBdmkfIrT2KqdXEFjlJZtybyg5gW2Fn4lW\nFz/9gPIprt4pVe/YSS0ebg+9U5zpSXolwLjtkxwSI/mWP01rVS+V9V/AZ/wfUiLB\n6xt+Z/dFaZWqDU29J/26E6ABkAmMPLmIlR1JAvWrFVYiaOrUpUaSysB9ScLvwYoH\nBQIDAQAB\n-----END PUBLIC KEY-----\n"
+}

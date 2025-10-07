@@ -1,0 +1,13 @@
+{
+    "studentId": "05",
+    "certificateData": {
+        "name": "Suraj",
+        "course": "CSE",
+        "grade": "E",
+        "issueDate": 1744739723,
+        "institution": "KLE"
+    },
+    "certificateHash": "eacc3a84e186bca34b56490eb51af4b0c4a3957987968d56d85ea97ba056492d",
+    "signature": "0116e612f99a25fade1c458a9b3be31ba1f16f8233d0427d4c4930e8b0c235a32e1b7654ae80390cc998f6940803175dc6b181d1ccd7b6f47df397f28b7ca9ec326c4bf965d734401327f3d41e8cef24fdb1d976f9c9a3089afdb4888096999180e600af208c410b93c43fdb12b5f19475225fc9bbcfd7302a3134209937c340b0a4fc9cc7c959f869d6a5954f7d35aa20f864e9fe2d4d44a670bec0c248a6ffbd04d673379954429f84c40b27bde2f1b86f26870bb6f0ce12c2bd9bb320808f8b15c3541c291930f2c3a3a9a6f6ef24660cd791fa30984e8fda90a32160937a8f8daf6c5133763c09dba9cda6e4555ec8ca4094cb20f34faf7cdb0f6d705fb0",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmduRjNN63/0oa1yhDpke\nlda8TlgKfejnXqVa7GTXC+N8FW9+fP/7dGXeJyLagi4xh80ytA7QbRWtrg34ehwc\ni7AsYvQ+9X1bDRPs8gaewLTv4tAKj4yWefpgI4bmyIhUh4spP29hWtMrN3Ks0mLu\n1FAxU0Z3H6EMJyHhGjLE2muusD80Q6SUtGf8UXK79jWrqsB7CHKht/FLCqbsXmhy\nqmVuT9GgEWs1HafBjDWKYq6ht4fV3RgfFcAFHvprbDGvSWtjSHKwXmBRkw9Yx4Mp\ntCjO44VHm8LjAfJzDVhp1T5u06YPZwRghH1QkhugZi2ie0dHnx1wrhuxq1xPN3nl\n4wIDAQAB\n-----END PUBLIC KEY-----\n"
+}

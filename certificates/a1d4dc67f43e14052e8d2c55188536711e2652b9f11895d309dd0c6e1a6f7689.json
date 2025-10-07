@@ -1,0 +1,13 @@
+{
+    "studentId": "03",
+    "certificateData": {
+        "name": "Gilmaan",
+        "course": "Bachelor of Engg/Tech",
+        "grade": "E",
+        "issueDate": 1744789999,
+        "institution": "KLE"
+    },
+    "certificateHash": "a1d4dc67f43e14052e8d2c55188536711e2652b9f11895d309dd0c6e1a6f7689",
+    "signature": "5532e6f69d3ee8a53007d403e773b58244e099694fa3a84a859429fc793fed76aab2f42e152eba8e8fa2619cccc068a7ad8678c05af558c4ce21b14828f58f9fa2d65d7837e299ccb940a578af44b5fe441d9632c3c9a3c0c5696115befe9912d1867ad80841468dba4780e4274b5131dafeac27eae03bb3606de011cd635ec0179d21663ea5f445c091b1f7d75234dd9654a75c2dcc3f460ff75c4f65fa5858e6e3161a10d10d739ac59efa052cb7d42373be6b34f1fbd717000b303fcd5b11e6e720944ee9dd66530bb0f67d967c353d260209053178eb0065d847ba93bd84158d03a28a4e24657aa0e8528fbc861b236c6cfc4b8e8aee3577a103abe05dba",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkfn7TA/LpzFvAL66rLij\neTKDBHi1rSXCYoIG8tVhYXCRG0Xl0pwa/Ga2YFUsAVd3nF+QllXv4TfnGlnW8Ix6\nYFNsMT5ggESkmr9togYaOkfSShyEe2Rm+meCBQ3ixHJSkdokU7fgutu3iuePN9Eh\nWFipwwx2NDxx4Z8vZ2UdfOe++KvnUTRE1BRwSYVDAeOCeLT/cbknoonNjTmXnZGC\n1Qmotx36l1FkecscYJkEAbnyguorANWOHnvhfvNbqrvH9iO2OSXrdfCVxh7pOb1h\nmCG3/fZyQw0Jw43g9RCMxBS4zna3gSUrL5BrXlx+R82jLuI/2CcNVLuE+XJhQM6f\nowIDAQAB\n-----END PUBLIC KEY-----\n"
+}

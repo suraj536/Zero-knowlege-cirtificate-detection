@@ -1,0 +1,13 @@
+{
+    "studentId": "02",
+    "certificateData": {
+        "name": "Maheboob Shaik",
+        "course": "Bachelor of Engg/Tech",
+        "grade": "A",
+        "issueDate": 1744864483,
+        "institution": "KLE"
+    },
+    "certificateHash": "d283eac983b9b3929cbb8d355f8ef1b484997213acd5c0aaa0ce6086a64fb60c",
+    "signature": "0584943056c554b566faf496f2b1a5bf816c50c2a4e023f8bef276f855292ba35003958baa7309b03bf5401ec8ea282126beecee244f6622eff9341e5355626165fa99cf7f02590fd0119e948c7e11b10f3a1c17e87b9bffa0eb1e29ab616fae336177f7402be9bdf0ea52bf5e92eb2dd7caf49b5f163a52dc360b66d04301a355011dfa90884b66b42d16731f1fccac2f4a7d9715638a2a4202e3323a435924e18b796d971eb7f54ec1c35f923ba57ee22efc5cc67a2dcebd5a99e3abe49373ee196ae76804c8066d55771621ea462cf2bb0cf641eb1b614951850aec698f5c8e396c88a064b3a7ceeda84cee4abfebe43a74cda05fc6ff74b86a6e56099bc3",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvbwm1caM406whW2JxW7D\nBL9uIRHVbpnmRzzio/MuzsWcNDZpPEym4xP87IpOnx1wyWNzceUcP3jqDxoXfsSx\nxWSd3o471z+icF8CxFHAyE6a8Tbd6ZHnoz38szyaEuyvtzvpuOMoDi7hIrLE8bTB\nRPSpSuO5HXWsEX1vc9YEov0D29YiYvCEbAWyol4xvVANuPCQhqmdofB+IQ0i+rhk\nT48+u9TDvNVbTdt5Pm4q88MZELsy6dj+6iwoLKwpaAxykZ4EAAfnyplZj3C8Qbgx\nO55CGaGiCGMgZEVW4wN07Kp2a7bXblAJ6otmrbS99BHdpSYX/eQfTVxRKo0Yr3wa\nHQIDAQAB\n-----END PUBLIC KEY-----\n"
+}

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Blockchain Certificate System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <style>
+            body {
+                background-color: #121212;
+                font-family: 'Inter', sans-serif;
+                color: #e0e0e0;
+            }
+    
+            h1 {
+                color: #00f9a6;
+                font-weight: 600;
+            }
+    
+            .card {
+                background-color: #1e1e1e;
+                border: 1px solid #333;
+                border-radius: 10px;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            }
+    
+            .card-header {
+                background-color: #262626;
+                border-bottom: 1px solid #333;
+                font-weight: 600;
+                font-size: 1.1rem;
+            }
+    
+            .nav-tabs .nav-link {
+                color: #a9a9a9;
+                border: none;
+                background-color: transparent;
+            }
+    
+            .nav-tabs .nav-link.active {
+                color: #00f9a6;
+                border-bottom: 2px solid #00f9a6;
+            }
+    
+            .form-control {
+                background-color: #2c2c2c;
+                color: #e0e0e0;
+                border: 1px solid #444;
+            }
+    
+            .form-control:focus {
+                background-color: #333;
+                color: #fff;
+                border-color: #00f9a6;
+                box-shadow: 0 0 0 0.2rem rgba(0, 249, 166, 0.25);
+            }
+    
+            .btn-primary {
+                background-color: #00f9a6;
+                border-color: #00f9a6;
+                color: #000;
+                font-weight: 600;
+            }
+    
+            .btn-primary:hover {
+                background-color: #00c88a;
+                border-color: #00c88a;
+            }
+    
+            .btn-success {
+                background-color: #28a745;
+                border-color: #28a745;
+            }
+    
+            .alert {
+                background-color: #2d2d2d;
+                border-left: 4px solid #00f9a6;
+                color: #dcdcdc;
+            }
+    
+            .alert-success {
+                border-left-color: #00f9a6;
+            }
+    
+            .alert-danger {
+                border-left-color: #ff4c4c;
+            }
+    
+            .list-group-item {
+                background-color: #1a1a1a;
+                border-color: #2e2e2e;
+                color: #d0d0d0;
+            }
+    
+            ol > li {
+                margin-bottom: 0.5rem;
+            }
+    
+            ::selection {
+                background-color: #00f9a6;
+                color: #121212;
+            }
+    
+            #myTab .nav-link {
+                font-weight: 500;
+                letter-spacing: 0.5px;
+            }
+        </style>
+    
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Blockchain Certificate System</h1>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="issue-tab" data-bs-toggle="tab" data-bs-target="#issue" type="button" role="tab">Issue Certificate</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="verify-tab" data-bs-toggle="tab" data-bs-target="#verify" type="button" role="tab">Verify Certificate</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="logs-tab" data-bs-toggle="tab" data-bs-target="#logs" type="button" role="tab">Logs</button>
+            </li>
+        </ul>
+        
+        <div class="tab-content mt-3" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="home" role="tabpanel">
+                <div class="text-center mb-4">
+                    <img src="/static/blockchain_logo.jpeg" alt="Blockchain Logo" style="max-width: 250px;" class="img-fluid">
+                    <h2 class="mt-3 text-success">Welcome to the Blockchain Certificate System</h2>
+                    <p class="lead text-light">A secure, immutable, and decentralized way to issue and verify academic credentials.</p>
+                </div>
+            
+                <div class="card mb-4" style="background-color: #1e1e1e; border: 1px solid #198754;">
+                    <div class="card-header text-white" style="background-color: #198754;">How It Works</div>
+                    <div class="card-body text-light">
+                        <ul>
+                            <li><strong class="text-success">Issue Certificate:</strong> Admins can issue certificates. Each certificate is stored on the blockchain with a unique hash and downloadable as a PDF.</li>
+                            <li><strong class="text-success">Verify Certificate:</strong> Anyone with a hash can verify the authenticity of a certificate on-chain without revealing private details.</li>
+                            <li><strong class="text-success">Logs:</strong> Keeps track of certificate issuance and verification actions in real-time.</li>
+                            <li><strong class="text-success">MetaMask:</strong> MetaMask is required to approve and sign transactions securely with Ethereum testnet.</li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <div class="card" style="background-color: #1e1e1e; border: 1px solid #198754;">
+                    <div class="card-header text-white" style="background-color: #198754;">About Us</div>
+                    <div class="card-body text-light">
+                        <p>This project was built as part of our academic journey to explore secure systems using Blockchain. The system uses Ethereum smart contracts, IPFS (optional), and Zero-Knowledge Proof concepts to validate certificates.</p>
+                        <ul>
+                            <li><strong class="text-success">Maheboob</strong> – Backend & Blockchain Integration</li>
+                            <li><strong class="text-success">Mayur</strong> – Frontend UI & PDF Generator</li>
+                            <li><strong class="text-success">Gilmaan</strong> – MetaMask Integration & Smart Contracts</li>
+                            <li><strong class="text-success">Suraj</strong> – Testing & Documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div class="tab-pane fade" id="issue" role="tabpanel">
+                <div class="card">
+                    <div class="card-header">Issue Certificate</div>
+                    <div class="card-body">
+                        <form id="issueCertificateForm">
+                            <div class="mb-3">
+                                <label for="studentId" class="form-label">Student ID</label>
+                                <input type="text" class="form-control" id="studentId" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="studentName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="studentName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="course" class="form-label">Course</label>
+                                <input type="text" class="form-control" id="course" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="grade" class="form-label">Grade</label>
+                                <input type="text" class="form-control" id="grade" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="institution" class="form-label">Institution</label>
+                                <input type="text" class="form-control" id="institution" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Issue Certificate</button>
+                        </form>
+                        <div id="certificateResult" class="alert alert-success mt-3 d-none">
+                            <p><strong>Certificate Hash:</strong> <span id="createdCertificateHash"></span></p>
+                            <p><strong>Transaction Hash:</strong> <span id="txHash"></span></p>
+                            <button id="downloadBtn" class="btn btn-success">Download Certificate PDF</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="verify" role="tabpanel">
+                <div class="card">
+                    <div class="card-header">Verify Certificate</div>
+                    <div class="card-body">
+                        <form id="verifyCertificateForm">
+                            <div class="mb-3">
+                                <label for="certificateHash" class="form-label">Certificate Hash</label>
+                                <input type="text" class="form-control" id="certificateHash" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Verify Certificate</button>
+                        </form>
+                        <div id="verificationResult" class="alert mt-3 d-none">
+                            <p><strong id="verificationStatus"></strong></p>
+                            <div id="certificateDetails"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="logs" role="tabpanel">
+                <div class="card">
+                    <div class="card-header">System Logs</div>
+                    <div class="card-body">
+                        <ul id="logList" class="list-group"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Modal for Certificate Preview -->
+<div class="modal fade" id="certificatePreviewModal" tabindex="-1" aria-labelledby="certificatePreviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="certificatePreviewModalLabel">Certificate Preview</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <iframe id="certificatePreviewFrame" style="width: 100%; height: 600px; border: none;"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button id="confirmDownloadBtn" class="btn btn-success">Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let web3;
+        let accounts;
+        async function initWeb3() {
+            if (window.ethereum) {
+                try {
+                    web3 = new Web3(window.ethereum);
+                    accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+                } catch (error) {
+                    console.error("User denied account access");
+                }
+            } else {
+                alert("Please install MetaMask!");
+            }
+        }
+        function addLog(message) {
+            const timestamp = new Date().toLocaleString();
+            $('#logList').prepend(`<li class="list-group-item"><strong>[${timestamp}]</strong> ${message}</li>`);
+        }
+        $('#issueCertificateForm').submit(async function (e) {
+            e.preventDefault();
+            if (!web3) {
+                alert("Please connect to MetaMask first.");
+                return;
+            }
+            const data = {
+                student_id: $('#studentId').val(),
+                name: $('#studentName').val(),
+                course: $('#course').val(),
+                grade: $('#grade').val(),
+                institution: $('#institution').val()
+            };
+            try {
+                const response = await fetch('/generate_certificate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                if (result.success) {
+                    $('#createdCertificateHash').text(result.certificateHash);
+                    $('#txHash').text(result.txHash);
+                    $('#certificateResult').removeClass('d-none');
+                    addLog(`Certificate issued for ${data.name} | Hash: ${result.certificateHash}`);
+                    $('#downloadBtn').off('click').on('click', async function () {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF({ orientation: "landscape" });
+
+    const logoImg = new Image();
+    logoImg.src = '/static/image1.png';
+
+    logoImg.onload = function () {
+        doc.addImage(logoImg, 'PNG', 120, 10, 50, 30);
+        doc.setFontSize(24);
+        doc.setFont("helvetica", "bold");
+        doc.text("Certificate of Completion", 148.5, 50, null, null, 'center');
+        doc.setLineWidth(0.5);
+        doc.line(20, 55, 275, 55);
+
+        let y = 70;
+        const lineHeight = 10;
+        doc.setFontSize(14);
+        doc.setFont("helvetica", "normal");
+        doc.text("This is to certify that", 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.setFont("helvetica", "bold");
+        doc.text(`${data.name}`, 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.setFont("helvetica", "normal");
+        doc.text(`(Student ID: ${data.student_id})`, 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.text("has successfully completed the course", 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.setFont("helvetica", "bold");
+        doc.text(`${data.course}`, 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.setFont("helvetica", "normal");
+        doc.text(`with grade: ${data.grade}`, 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.text(`offered by ${data.institution}`, 148.5, y, null, null, 'center'); y += lineHeight * 2;
+        doc.setFontSize(10);
+        doc.text(`Certificate Hash: ${result.certificateHash}`, 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.text(`Transaction Hash: ${result.txHash}`, 148.5, y, null, null, 'center'); y += lineHeight;
+        doc.text(`Issued on: ${new Date().toLocaleDateString()}`, 148.5, y, null, null, 'center');
+
+        // Create PDF Blob and preview it in modal
+        const blob = doc.output('blob');
+        const blobUrl = URL.createObjectURL(blob);
+        $('#certificatePreviewFrame').attr('src', blobUrl);
+        $('#certificatePreviewModal').modal('show');
+
+        // Handle confirmed download
+        $('#confirmDownloadBtn').off('click').on('click', function () {
+            doc.save(`${data.name}_Certificate.pdf`);
+            $('#certificatePreviewModal').modal('hide');
+        });
+    };
+});
+
+
+                } else {
+                    alert("Error: " + result.message);
+                    addLog(`Error issuing certificate for ${data.name}`);
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("An error occurred while issuing the certificate.");
+                addLog("Unexpected error during certificate issuance.");
+            }
+        });
+        $('#verifyCertificateForm').submit(async function (e) {
+            e.preventDefault();
+            const hash = $('#certificateHash').val();
+            try {
+                const response = await fetch('/verify_certificate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ certificateHash: hash })
+                });
+                const result = await response.json();
+                $('#verificationResult').removeClass('d-none');
+                if (result.success) {
+                    $('#verificationResult').removeClass('alert-danger').addClass('alert-success');
+                    $('#verificationStatus').text('Certificate is Valid');
+                    $('#certificateDetails').html(`
+                        <p>Issue Date: ${new Date(result.issueDate * 1000).toLocaleDateString()}</p>
+                        <p>Institution: ${result.institution}</p>
+                        <p>Course: ${result.course}</p>
+                    `);
+                    addLog(`Verification successful for hash: ${hash}`);
+                } else {
+                    $('#verificationResult').removeClass('alert-success').addClass('alert-danger');
+                    $('#verificationStatus').text('Certificate Verification Failed');
+                    $('#certificateDetails').html(`<p>Reason: ${result.message}</p>`);
+                    addLog(`Verification failed for hash: ${hash}`);
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("An error occurred while verifying the certificate.");
+                addLog("Unexpected error during certificate verification.");
+            }
+        });
+        $(document).ready(function () {
+            initWeb3();
+        });
+    </script>
+</body>
+</html>

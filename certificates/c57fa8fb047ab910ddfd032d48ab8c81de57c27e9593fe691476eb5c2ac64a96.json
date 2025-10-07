@@ -1,0 +1,13 @@
+{
+    "studentId": "99",
+    "certificateData": {
+        "name": "rahul",
+        "course": "Civil",
+        "grade": "7.6",
+        "issueDate": 1744870521,
+        "institution": "KLE"
+    },
+    "certificateHash": "c57fa8fb047ab910ddfd032d48ab8c81de57c27e9593fe691476eb5c2ac64a96",
+    "signature": "b2287808f873236d03826425a2afc09686ea5af4dadd15f1d73f1a2e2c26196868e04941f2144765456d05b5557689b24981be5ccf07344ca3c82aa50e222c9116c9ba96abb19c598e31934dcf11d92ceb2b548e65d14a4d80ee29521574a56aa806c100deef22d1949c1fb7b03130c9fadb22878416c17cf9cad2edcf9b7439465dd7764bd45bbeb7ff297a8aca631710db99cb48f9bd4982f0d9d90bb218788db8d640b04d862644a01569cf9105b05617bda742d4d265e26463552b1740ccb51417c3a7ff95ed887d1ea20de589f0fe548946912fbbfbe392dd4ecfff9d7936fc2e3da8a2c42b423b69118eaa1f3b7e08b8ffd8ed49e079a270cbaa3ed8ac",
+    "publicKey": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8cF/33MhTT2rOVLlM2dF\nyM4AoBcUclPdOdKSkMA1ckeX8221SPGVAG1LtrsyKnmJGCVqvCzJ6EC0jGKq0a4i\nEp0ckpDFasEePsX5DgGF8N/hMXHyHrZmB7zt0iytfdIZqFuGA8uz5C8+20mp0hqg\nJxmz9Usn+bbUclu3ZZz/xLlb5QwUfegGbraOaAe2QAmjnlfCO96xbfE69JPneBp9\nO2Uyyo4FElpuPTzCXwpdFOkLwJkPmj/uQlAPCzR72jFNwnnnnauSSH8SYOkjm4Kr\nItGat90puL8kev+aSPigMtULcEZhfkRrOnfj5FAZVqKzr+1Z3jzencCXOhJRAlOo\nAwIDAQAB\n-----END PUBLIC KEY-----\n"
+}
